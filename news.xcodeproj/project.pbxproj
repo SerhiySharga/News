@@ -10,9 +10,10 @@
 		D3987D021DC222E200548BAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D011DC222E200548BAD /* AppDelegate.swift */; };
 		D3987D041DC222E200548BAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D031DC222E200548BAD /* ViewController.swift */; };
 		D3987D071DC222E200548BAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3987D051DC222E200548BAD /* Main.storyboard */; };
-		D3987D0A1DC222E200548BAD /* news.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3987D081DC222E200548BAD /* news.xcdatamodeld */; };
 		D3987D0C1DC222E200548BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3987D0B1DC222E200548BAD /* Assets.xcassets */; };
 		D3987D0F1DC222E200548BAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3987D0D1DC222E200548BAD /* LaunchScreen.storyboard */; };
+		D3987D171DC23EC600548BAD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D161DC23EC600548BAD /* TableViewCell.swift */; };
+		D3987D191DC23EDB00548BAD /* ItemsBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3987D181DC23EDB00548BAD /* ItemsBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		D3987D011DC222E200548BAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3987D031DC222E200548BAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3987D061DC222E200548BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D3987D091DC222E200548BAD /* news.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = news.xcdatamodel; sourceTree = "<group>"; };
 		D3987D0B1DC222E200548BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3987D0E1DC222E200548BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3987D101DC222E200548BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3987D161DC23EC600548BAD /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D3987D181DC23EDB00548BAD /* ItemsBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				D3987D011DC222E200548BAD /* AppDelegate.swift */,
 				D3987D031DC222E200548BAD /* ViewController.swift */,
+				D3987D181DC23EDB00548BAD /* ItemsBase.swift */,
+				D3987D161DC23EC600548BAD /* TableViewCell.swift */,
 				D3987D051DC222E200548BAD /* Main.storyboard */,
 				D3987D0B1DC222E200548BAD /* Assets.xcassets */,
 				D3987D0D1DC222E200548BAD /* LaunchScreen.storyboard */,
 				D3987D101DC222E200548BAD /* Info.plist */,
-				D3987D081DC222E200548BAD /* news.xcdatamodeld */,
 			);
 			path = news;
 			sourceTree = "<group>";
@@ -139,9 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3987D191DC23EDB00548BAD /* ItemsBase.swift in Sources */,
 				D3987D041DC222E200548BAD /* ViewController.swift in Sources */,
+				D3987D171DC23EC600548BAD /* TableViewCell.swift in Sources */,
 				D3987D021DC222E200548BAD /* AppDelegate.swift in Sources */,
-				D3987D0A1DC222E200548BAD /* news.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +270,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SSharga.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -278,7 +282,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SSharga.news;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -303,19 +307,6 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		D3987D081DC222E200548BAD /* news.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D3987D091DC222E200548BAD /* news.xcdatamodel */,
-			);
-			currentVersion = D3987D091DC222E200548BAD /* news.xcdatamodel */;
-			path = news.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = D3987CF61DC222E200548BAD /* Project object */;
 }
